@@ -21,6 +21,16 @@ class YouTubeDownloader:
         stream_options = [
             f"Resolucion: {stream.resolution or 'N/A'} / FPS: {getattr(stream, 'fps', 'N/A')} / Tipo:{stream.mime_type}"
             for stream in streams
-
+            
         ]
+
+        choice = st.selectbox("Elija una opcion de stream: ", stream_options)
+        self.stream in streams
+
+    def ObtenerTamano (self):
+        peso = self.stream.filesize /1000000
+        return peso
+    
+    def
+
 
